@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraController : MonoBehaviour
+public class CameraControllerAA : MonoBehaviour
 {
     public float panSpeed = 20f;
     public float panBorder = 15f;

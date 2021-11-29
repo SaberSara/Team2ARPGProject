@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GateTrigger : MonoBehaviour
+public class GateTriggerAA : MonoBehaviour
 {
     [SerializeField]
     GameObject gate;

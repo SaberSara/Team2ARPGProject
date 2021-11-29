@@ -5,7 +5,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class PlayernavMesh : MonoBehaviour
+public class PlayernavMeshAA : MonoBehaviour
 {
     [SerializeField] private Transform movePositionTransform;
     private NavMeshAgent navMeshAgent;

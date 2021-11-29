@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class CameraFollow : MonoBehaviour
+public class CameraFollowAA : MonoBehaviour
 {
     // camera will follow this object
     public GameObject Target;

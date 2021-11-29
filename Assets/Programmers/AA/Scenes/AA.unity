@@ -483,6 +483,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movePositionTransform: {fileID: 1102567510}
+  navMeshAgent: {fileID: 0}
 --- !u!1 &673693943
 GameObject:
   m_ObjectHideFlags: 0
@@ -1636,7 +1637,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1892721301}
   m_Layer: 0
-  m_Name: Navmesh
+  m_Name: NavmeshAA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
