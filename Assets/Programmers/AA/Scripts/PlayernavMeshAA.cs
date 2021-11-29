@@ -7,7 +7,7 @@ using UnityEngine.AI;
 
 public class PlayernavMeshAA : MonoBehaviour
 {
-    [SerializeField] private VectorThreeValue playerPosition;
+    [SerializeField] private Vector3Value playerPosition;
     
     [SerializeField] private Transform movePositionTransform;
     private NavMeshAgent navMeshAgent;
@@ -15,7 +15,7 @@ public class PlayernavMeshAA : MonoBehaviour
     private void Awake()
     {
          navMeshAgent = GetComponent<NavMeshAgent>();
-         playerPosition.Vector3Value = transform.position;
+         playerPosition.Vector3 = transform.position;
     }
 
     private void Update()
@@ -30,7 +30,7 @@ public class PlayernavMeshAA : MonoBehaviour
             }
         }
 
-        playerPosition.Vector3Value = transform.position;
+        playerPosition.Vector3 = transform.position;
     }
     
     private bool SetDestination(Vector3 targetDestination)

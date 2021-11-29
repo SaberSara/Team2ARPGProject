@@ -2,17 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Vector3Value : MonoBehaviour
+[CreateAssetMenu(fileName = "Vector3Value", menuName = "Value/Vector3")]
+public class Vector3Value : ScriptableObject
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private Vector3 vector3Value;
+    
+    public Vector3 Vector3
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        get => vector3Value;
+        set => vector3Value = value;
     }
 }

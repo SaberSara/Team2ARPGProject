@@ -6,7 +6,7 @@ using UnityEngine.AI;
 public class CameraFollowAA : MonoBehaviour
 {
     // camera will follow this object
-    [SerializeField] private VectorThreeValue target;
+    [SerializeField] private Vector3Value target;
     //camera transform
     public Transform camTransform;
     // offset between camera and target
@@ -24,7 +24,7 @@ public class CameraFollowAA : MonoBehaviour
     private void Start()
     {
         //navMeshAgent = GetComponent<NavMeshAgent>();
-        Offset = camTransform.position - target.Vector3Value;
+        Offset = camTransform.position - target.Vector3;
         //rigidbody = Target.GetComponent<Rigidbody>();
     }
 
@@ -33,7 +33,7 @@ public class CameraFollowAA : MonoBehaviour
         if (navMeshAgent.velocity.magnitude > 0.15f)
         {
             // update position
-            Vector3 targetPosition = target.Vector3Value + Offset;
+            Vector3 targetPosition = target.Vector3 + Offset;
             camTransform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, SmoothTime);
             
             // update rotation
