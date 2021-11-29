@@ -482,8 +482,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 580e51a3cb540e746a123d467dac33f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerPosition: {fileID: 11400000, guid: 00c677d8b6768db4f8d10769b4aa42a0, type: 2}
   movePositionTransform: {fileID: 1102567510}
-  navMeshAgent: {fileID: 0}
 --- !u!1 &673693943
 GameObject:
   m_ObjectHideFlags: 0
@@ -1081,7 +1081,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4205e3b095b9a174aa13f8cc185ea693, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Target: {fileID: 564121631}
+  target: {fileID: 11400000, guid: 00c677d8b6768db4f8d10769b4aa42a0, type: 2}
   camTransform: {fileID: 963194228}
   Offset: {x: 0, y: 0, z: 0}
   SmoothTime: 0.3
@@ -1259,6 +1259,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d437b126fdeefca40b4212ef83c68d00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyPosition: {fileID: 11400000, guid: b098e44ed3ed925448064116a386f5b5, type: 2}
   enemy: {fileID: 1102567511}
   Player: {fileID: 564121635}
 --- !u!114 &1102567513
